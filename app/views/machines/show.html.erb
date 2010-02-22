@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @machine.name %>
+</p>
+
+<p>
+  <b>Seatadj:</b>
+  <%=h @machine.seatadj %>
+</p>
+
+<p>
+  <b>Backadj:</b>
+  <%=h @machine.backadj %>
+</p>
+
+<p>
+  <b>Otheradj:</b>
+  <%=h @machine.otheradj %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @machine.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_machine_path(@machine) %> |
+<%= link_to 'Back', machines_path %>

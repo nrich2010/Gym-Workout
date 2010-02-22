@@ -1,0 +1,17 @@
+      t.string  :name
+      t.string  :seatadj
+      t.string  :backadj
+      t.string  :otheradj
+      t.text    :notes
+
+machines name:string seatadj:string backadj:string otheradj:string notes:text
+
+
+      t.datetime  :date
+      t.decimal   :time
+      t.decimal   :distance
+      t.integer   :weight
+      t.integer   :rep
+      t.text      :notes
+
+entry date:datetime time:decimal distance:decimal weight:integer rep:integer notes:text

@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @workout.name %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @workout.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>

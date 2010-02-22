@@ -1,0 +1,31 @@
+<p>
+  <b>Name:</b>
+  <%=h @exercise.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @exercise.description %>
+</p>
+
+<p>
+  <b>Equipment:</b>
+  <%=h @exercise.equipment %>
+</p>
+<p>
+  <b>Muscles:</b>
+</p>
+<table>
+	<% @exercise.muscles.each do |muscle|  %>
+  	<tr><td><%= muscle.name %></td></tr>
+	<% end %>
+</table>
+
+<p>
+  <b>Note:</b>
+  <%=h @exercise.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_exercise_path(@exercise) %> |
+<%= link_to 'Back', exercises_path %>

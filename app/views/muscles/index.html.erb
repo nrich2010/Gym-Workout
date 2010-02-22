@@ -1,0 +1,24 @@
+<h1>Listing muscles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Area</th>
+  </tr>
+
+<% @muscles.each do |muscle|  %>
+  <tr>
+    <td><%= link_to muscle.name, muscle %></td>
+    <td><%= link_to muscle.category[:name], muscle.category %></td>
+    <td><%= link_to 'Edit', edit_muscle_path(muscle) %></td>
+    <td><%= link_to 'Destroy', muscle, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<p>
+<%= link_to 'Exercises', exercises_path %>
+</p>
+
+<br />
+
+<%= link_to 'New muscle', new_muscle_path %>

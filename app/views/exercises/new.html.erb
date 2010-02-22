@@ -1,0 +1,37 @@
+<h1>New exercise</h1>
+
+<% form_for(@exercise) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :equipment %><br />
+    <%= f.text_field :equipment %>
+  </p>
+  <p>
+    <%= f.label :muscles %><br />
+	<ul class="checkbox-list">
+	<% Muscle.all.each do |muscle| -%>
+	<li><%= check_box_tag "exercise[muscle_ids][]", muscle.id -%>
+	<%= muscle.name -%></li>
+	<% end -%>
+	</ul>
+  </p>
+
+  <p>
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', exercises_path %>

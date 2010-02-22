@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-02-20 21:45:19
+  time: 9.99
+  distance: 9.99
+  weight: 1
+  rep: 1
+  notes: MyText
+
+two:
+  date: 2010-02-20 21:45:19
+  time: 9.99
+  distance: 9.99
+  weight: 1
+  rep: 1
+  notes: MyText

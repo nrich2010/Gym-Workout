@@ -1,0 +1,11 @@
+<p>
+  <b>Name:</b>
+  <%=h @muscle.name %>
+</p>
+<p>
+  <b>Category:</b>
+  <%=h @muscle.category.name %>
+</p>
+
+<%= link_to 'Edit', edit_muscle_path(@muscle) %> |
+<%= link_to 'Back', muscles_path %>

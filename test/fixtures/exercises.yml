@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: 
+  description: 
+  equipment: 
+  note: MyText
+
+two:
+  name: 
+  description: 
+  equipment: 
+  note: MyText

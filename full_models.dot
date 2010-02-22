@@ -1,0 +1,14 @@
+digraph models_diagram {
+	graph[overlap=false, splines=true]
+	"Category" [shape=Mrecord, label="{Category|name :string\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Entry" [shape=Mrecord, label="{Entry|date :datetime\ltime :decimal\ldistance :decimal\lweight :integer\lrep :integer\lnotes :text\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Equipment" [shape=Mrecord, label="{Equipment|name :string\lseatadj :string\lbackadj :string\lotheradj :string\lnotes :text\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Exercise" [shape=Mrecord, label="{Exercise|name :string\ldescription :string\lequipment :string\lnote :text\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Muscle" [shape=Mrecord, label="{Muscle|name :string\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Type" [shape=Mrecord, label="{Type|name :string\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Category" -> "Muscle" [arrowtail=crow, arrowhead=dot, dir=both]
+	"Exercise" -> "Type" [arrowtail=odot, arrowhead=dot, dir=both]
+	"Exercise" -> "Entry" [arrowtail=crow, arrowhead=dot, dir=both]
+	"Exercise" -> "Equipment" [arrowtail=odot, arrowhead=dot, dir=both]
+	"Exercise" -> "Muscle" [arrowtail=crow, arrowhead=crow, dir=both]
+}

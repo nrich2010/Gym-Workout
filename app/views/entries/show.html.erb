@@ -1,0 +1,38 @@
+<p>
+  <b>Date:</b>
+  <%=h @entry.date %>
+</p>
+
+<p>
+  <b>Exercise:</b>
+  <%=h @entry.exercise.name %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%=h @entry.time %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%=h @entry.distance %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h @entry.weight %>
+</p>
+
+<p>
+  <b>Rep:</b>
+  <%=h @entry.rep %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @entry.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
